@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import {
     SafeAreaView,
     StyleSheet,
@@ -16,6 +17,7 @@ import {
 
 export default function Tabbar (props , {navigation}) {
     // console.log(props , "props for tab bar")
+    // const navigation = useNavigation()
     console.log(navigation , "nav for tab bar")
 
     useEffect(() => {
@@ -26,7 +28,6 @@ export default function Tabbar (props , {navigation}) {
 
     return(
         <View style={styles.tabbar}>
-         {/* <View style={{height : props.screenHeight - 900 }}> */}
             <Button title="home"></Button>
             <Button title="home"></Button>
             <Button title="home"></Button>
@@ -42,6 +43,6 @@ const styles = StyleSheet.create({
         width : tabbarWidth,
         flexDirection : 'row',
         justifyContent : 'space-between',
-        backgroundColor : 'rgb(100 , 100 ,100)'
+        backgroundColor : 'rgb(100 , 100 ,100)',
     }
 })

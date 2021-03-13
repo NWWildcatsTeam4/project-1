@@ -32,7 +32,8 @@ const Dashboard = ({ navigation }) => {
 const styles = StyleSheet.create({
     dashboardContainer: {
         flex: 1,
-        backgroundColor: 'rgb(240 , 190 , 255 )'
+        backgroundColor: 'rgb(240 , 190 , 255 )',
+        padding : 100
     },
     touchBtn : {
         height : 120,
